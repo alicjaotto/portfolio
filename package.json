@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Alicja Otto front-end developer portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alicjaotto/portfolio.git"
+  },
+  "author": "Alicja Otto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alicjaotto/portfolio/issues"
+  },
+  "homepage": "https://github.com/alicjaotto/portfolio#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "node-sass": "^4.11.0"
+  },
+  "dependencies": {}
+}
