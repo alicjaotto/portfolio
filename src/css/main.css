@@ -5,3 +5,46 @@
 
 body {
   background-color: #FFFFFF; }
+
+/*grid*/
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: "header" "content" "footer"; }
+
+.header {
+  grid-area: header;
+  background-color: yellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.content {
+  grid-area: content;
+  background-color: magenta;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+
+.footer {
+  grid-area: footer;
+  background-color: cyan;
+  display: flex;
+  justify-content: center; }
+
+.hidden {
+  display: none; }
+
+.header__nav__toggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #34495e;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
