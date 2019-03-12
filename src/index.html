@@ -15,18 +15,19 @@
   <body class="container">
     <header class="header">
       <h1>portfolio</h1>
-      <nav class="header__nav">
+      <nav role="navigation" class="header__nav">
         <div class="header__nav__toggle">
+          <input type="checkbox"/>
           <span></span>
           <span></span>
           <span></span>
-        </div>
-        <div id="nav-menu" class="hidden">
-          <ul class="header__nav__menu">
-            <li><a href="#about">about</a></li>
-            <li><a href="#projects">projects</a></li>
-            <li><a href="#contact">connect</a></li>
-          </ul>
+          <div id="nav-menu" class="header__nav__menu">
+            <ul class="header__nav__menu__list">
+              <li><a href="#about">about</a></li>
+              <li><a href="#projects">projects</a></li>
+              <li><a href="#contact">connect</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>

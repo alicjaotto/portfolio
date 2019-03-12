@@ -18,6 +18,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 6rem;
+  padding: 0 1.6rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .content {
@@ -41,11 +46,21 @@
 }
 
 .header__nav__toggle {
+  display: block;
+  position: relative;
+  // width: 2rem;
+  // height: 2rem;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+
   span {
     display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
+    width: 2rem;
+    height: 0.1rem;
+    margin-bottom: 0.6rem;
     position: relative;
 
     background: $color-secondary;
@@ -53,10 +68,84 @@
 
     z-index: 1;
 
-    transform-origin: 4px 0px;
+    transform-origin: 3px 2px;
 
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                 background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                 opacity 0.55s ease;
+
+    &:first-child {
+      transform-origin: 0% 0%;
+    }
+
+    &:nth-child(2) {
+      transform-origin: 0% 100%;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  input {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    // top: -7px;
+    // left: -5px
+    cursor: pointer;
+
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+
+    &:checked ~ span {
+      transform: rotate(-45deg) translate(0.1rem, -0.2rem);
+    }
+
+    &:checked ~ span:nth-child(2) {
+      opacity: 1;
+      transform: rotate(45deg) translate(-0.15rem, -0.01rem);
+    }
+
+    &:checked ~ span:nth-child(3) {
+      opacity: 0;
+      // transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    &:checked ~ .header__nav__menu {
+      // transform: none;
+      display: block;
+    }
+  }
+}
+
+.header__nav__menu {
+  position: absolute;
+  top: 6rem;
+  width: auto;
+  padding: 2rem;
+  display: none;
+  // padding-top: 125px;
+  background: $color-primary;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  // -webkit-transition:all 1.0s ease-in-out;
+  // -moz-transition:all 1.0s ease-in-out;
+  // -o-transition:all 1.0s ease-in-out;
+  // transition:all 1.0s ease-in-out;
+  // transform: translate(100%,0);
+  // visibility: hidden;
+  //
+  // transform-origin: 0% 0%;
+  // transform: translate(-100%, 0);
+  //
+  // transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+.header__nav__menu__list {
+  li {
+    padding: 0.6rem 0;
+    font-size: 1.6rem;
   }
 }
