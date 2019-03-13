@@ -1,0 +1,135 @@
+.header__logo {
+  margin-bottom: 2rem;
+  height: 5rem;
+}
+
+.header__logo__a,
+.header__logo__o {
+    font-size: 5rem;
+}
+
+.header__logo__a {
+  color: $color-theme-emerald;
+  font-weight: 300;
+  margin-right: -0.6rem;
+}
+
+.header__logo__o {
+  color: $color-secondary;
+  font-weight: normal;
+}
+
+.header__toggle__button {
+  box-shadow: none;
+  border-color: transparent;
+  background: none;
+  display: block;
+  width: 2rem;
+  height: 1.75rem;
+  cursor: pointer;
+  margin-left: auto;
+  position: relative;
+  border: none;
+
+  span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0.1rem;
+    left: 0;
+
+    background: $color-secondary;
+    border-radius: 0.2rem;
+
+    z-index: 1;
+
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+
+    &:nth-child(1) {
+      top: 0;
+    }
+
+    &:nth-child(2) {
+      top: 0.75rem;
+    }
+
+    &:nth-child(3){
+      top: 1.5rem;
+    }
+  }
+
+  &.expanded span:nth-child(1){
+    top: 0.95rem;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  }
+
+  &.expanded span:nth-child(2) {
+    opacity: 0;
+  }
+
+  &.expanded span:nth-child(3) {
+    top: 0.95rem;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+
+.header__nav__menu {
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  width: 100%;
+  background: $color-primary;
+  -webkit-font-smoothing: antialiased;
+  z-index: 2;
+}
+
+.header__nav__menu__list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header__nav__menu__list__item {
+  padding: 0.6rem 0;
+  font-size: $font-size-normal;
+  text-transform: uppercase;
+  font-family: $font-secondary;
+  font-weight: lighter;
+
+  a {
+    color: $color-secondary;
+    padding: 0 1rem;
+
+    &:hover {
+      color: $color-theme-emerald;
+    }
+
+    &:hover::before,
+    &:hover::after {
+      content: "\A";
+      width: 0.6rem;
+      height:0.6rem;
+      border-radius: 100%;
+      background: $color-theme-emerald;
+      display:inline-block;
+      margin:0 0.6rem;
+    }
+  }
+}
+
+.collapse {
+  display: none;
+}
