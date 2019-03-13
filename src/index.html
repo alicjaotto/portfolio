@@ -14,20 +14,23 @@
 
   <body class="container">
     <header class="header">
-      <h1>portfolio</h1>
+      <!-- <h1>portfolio</h1> -->
+      <a href="./">
+        <span class="header__logo__a">a</span>
+        <span class="header__logo__o">o</span>
+      </a>
+      <button class="header__toggle__button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <nav role="navigation" class="header__nav">
-        <div class="header__nav__toggle">
-          <input type="checkbox"/>
-          <span></span>
-          <span></span>
-          <span></span>
-          <div id="nav-menu" class="header__nav__menu">
-            <ul class="header__nav__menu__list">
-              <li><a href="#about">about</a></li>
-              <li><a href="#projects">projects</a></li>
-              <li><a href="#contact">connect</a></li>
-            </ul>
-          </div>
+        <div id="nav-menu" class="header__nav__menu collapse">
+          <ul class="header__nav__menu__list">
+            <li class="header__nav__menu__list__item"><a href="#about">about</a></li>
+            <li class="header__nav__menu__list__item"><a href="#projects">projects</a></li>
+            <li class="header__nav__menu__list__item"><a href="#contact">connect</a></li>
+          </ul>
         </div>
       </nav>
     </header>

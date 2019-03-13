@@ -1,10 +1,12 @@
 document.addEventListener('DOMContentLoaded', function(){
+  const button = document.querySelector('.header__toggle__button');
 
-  // function toggleMenu() {
-  //   const nav = document.querySelector('#nav-menu');
-  //   nav.classList.toggle('hidden');
-  // }
-  //
-  // document.querySelector('.header__nav__toggle')
-  //   .addEventListener('click', toggleMenu);
+  function toggleMenu() {
+    const nav = document.querySelector('#nav-menu');
+    nav.classList.toggle('collapse');
+    button.classList.toggle('expanded');
+    console.log(button);
+  }
+
+  button.addEventListener('click', toggleMenu);
 });
