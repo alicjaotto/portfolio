@@ -1,3 +1,4 @@
+@import './flaticon/_flaticon.scss';
 @import 'variables';
 @import 'reset';
 @import 'header';
@@ -26,7 +27,6 @@
 
 .content {
   grid-area: content;
-  background-color: magenta;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -35,17 +35,17 @@
 
 .footer {
   grid-area: footer;
-  background-color: cyan;
+  background-color: $color-theme-emerald;
   display: flex;
   justify-content: center;
+  color: $color-primary;
+  padding: 2rem 0;
 }
 
 .content__about {
-  // position: relative;
   width: 100%;
-  // padding-top: 2rem;
   background-color: $color-primary;
-  height: 25rem;
+  height: 50rem;
 }
 
 .content__about__intro {
@@ -53,7 +53,7 @@
   display: flex;
   justify-content: flex-start;
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .content__about__intro__square {
@@ -68,6 +68,7 @@
   left: 2rem;
   top: 3rem;
   color: $color-secondary;
+  font-family: $font-secondary;
 
   h2 {
     font-size: 2rem;
@@ -79,6 +80,7 @@
 .content__about__intro__title__part {
   display: block;
 }
+
 .content__about__intro__title__part__white {
   color: $color-primary;
   margin-right: 0.3rem;
@@ -90,27 +92,28 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 
 .content__about__description__text {
   width: 10rem;
   margin-right: 1rem;
+  font-family: $font-secondary;
 
   p {
     text-align: right;
     color: $color-grey;
-    font-size: $font-size-small;
+    font-size: $font-size-normal;
     position: relative;
 
     &::before {
       content: '<';
       color: $color-theme-emerald;
       font-weight: normal;
-      font-size: 3.6rem;
+      font-size: 3.2rem;
       position: absolute;
       font-family: $font-secondary;
-      top: -2rem;
+      top: -1.6rem;
       left: -1.5rem;
     }
 
@@ -118,9 +121,11 @@
       content: '>';
       color: $color-theme-emerald;
       font-weight: normal;
-      font-size: 3.6rem;
+      font-size: 3.2rem;
       position: absolute;
       font-family: $font-secondary;
+      top: 3rem;
+      left: 10.5rem;
     }
   }
 }
@@ -129,4 +134,104 @@
   width: 9rem;
   height: 9rem;
   background-color: $color-grey;
+}
+
+.content__about__characteristics {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: $color-secondary;
+  padding: 2rem 0;
+  height: auto;
+}
+
+.content__about__characteristics__feature {
+  width: 6rem;
+  margin: 0 2rem;
+
+  p {
+    color: $color-theme-emerald;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 400;
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.content__about__characteristics__feature__icon {
+  font-size: 4rem;
+  color: $color-theme-emerald;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content__projects {
+  height: auto;
+  width: 100%;
+  background-color: $color-primary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.content__projects__project {
+  width: 85%;
+}
+
+.content__projects__project__view {
+  display: flex;
+  justify-content: center;
+}
+
+.content__projects__project__view__window {
+  width: 20rem;
+  height: 15rem;
+  background-color: $color-secondary;
+  opacity: 0.75;
+}
+
+.content__projects__project__view__window__inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content__projects__project__view__window__inner__link {
+  width: 8rem;
+  padding: 1rem 2rem;
+  margin: 0.8rem 0;
+  border: 2px solid $color-theme-emerald;
+  border-radius: 1rem;
+  color: $color-theme-emerald;
+}
+
+.content__contact {
+  width: 100%;
+  background-color: $color-theme-emerald;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $color-primary;
+  padding: 2rem 0;
+
+  li {
+    display: inline-block;
+    font-size: 3rem;
+    margin: 0 1rem;
+
+    a {
+      color: $color-theme-nephritis;
+
+      &:hover {
+        color: $color-secondary;
+      }
+    }
+  }
 }

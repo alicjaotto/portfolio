@@ -6,6 +6,7 @@
 .header__logo__a,
 .header__logo__o {
     font-size: 5rem;
+    font-family: $font-secondary;
 }
 
 .header__logo__a {
@@ -106,7 +107,6 @@
   padding: 0.6rem 0;
   font-size: $font-size-normal;
   text-transform: uppercase;
-  font-family: $font-secondary;
   font-weight: lighter;
 
   a {
