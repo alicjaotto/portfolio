@@ -9,12 +9,12 @@
     <meta name="author" content="Alicja Otto">
     <link rel="stylesheet" href="./css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
   </head>
 
   <body class="container">
     <header class="header">
-      <!-- <h1>portfolio</h1> -->
       <a class="header__logo" href="./">
         <span class="header__logo__a">a</span>
         <span class="header__logo__o">o</span>
@@ -75,8 +75,19 @@
         </div>
       </section>
       <section id="projects" class="content__projects">
-        <h2>PROJECTS</h2>
         <article class="content__projects__project">
+          <div class="content__projects__project__description">
+            <h3 class="content__projects__project__description__title">Art memo</h3>
+            <p class="content__projects__project__description__text">
+              Java script memo game to learn art history's masterpieces
+            </p>
+            <div class="content__projects__project__description__tags">
+              <span>JavaScript</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>jQuery</span>
+            </div>
+          </div>
           <div class="content__projects__project__view">
             <div class="content__projects__project__view__window">
               <div class="content__projects__project__view__window__inner">
@@ -93,18 +104,20 @@
               </div>
             </div>
           </div>
-          <div class="content__projects__project__description">
-            <h3>Art memo</h3>
-            <p>Java script memo game to learn art history's masterpieces</p>
-            <div class="content__projects__project__description__tags">
-              <span>JavaScript</span>
-              <span>HTML5</span>
-              <span>CSS3</span>
-              <span>jQuery</span>
-            </div>
-          </div>
         </article>
         <article class="content__projects__project">
+          <div class="content__projects__project__description">
+            <h3 class="content__projects__project__description__title">to do list</h3>
+            <p class="content__projects__project__description__text">
+              AngularJs app with geolocation and weather info
+            </p>
+            <div class="content__projects__project__description__tags">
+              <span>JavaScript</span>
+              <span>AngularJS</span>
+              <span>HTML5</span>
+              <span>less</span>
+            </div>
+          </div>
           <div class="content__projects__project__view">
             <div class="content__projects__project__view__window">
               <div class="content__projects__project__view__window__inner">
@@ -121,43 +134,107 @@
               </div>
             </div>
           </div>
+        </article>
+        <article class="content__projects__project">
           <div class="content__projects__project__description">
-            <h3>to do list</h3>
-            <p>AngularJs app with geolocation and weather info</p>
+            <h3 class="content__projects__project__description__title">flight search</h3>
+            <p class="content__projects__project__description__text">
+              Create-react-app for fetching flight info from given API
+            </p>
             <div class="content__projects__project__description__tags">
               <span>JavaScript</span>
-              <span>AngularJS</span>
-              <span>HTML5</span>
-              <span>less</span>
+              <span>ReactJs</span>
+              <span>Material-UI</span>
+              <span>axios</span>
+            </div>
+          </div>
+          <div class="content__projects__project__view">
+            <div class="content__projects__project__view__window">
+              <div class="content__projects__project__view__window__inner">
+                <a class="content__projects__project__view__window__inner__link"
+                  href="https://alicjaotto.github.io/warsawjs-workshop-20-flight-scanner/"
+                  target="blank">
+                  DEMO
+                </a>
+                <a class="content__projects__project__view__window__inner__link"
+                  href="https://github.com/alicjaotto/warsawjs-workshop-20-flight-scanner"
+                  target="blank">
+                  REPO
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="content__projects__project">
+          <div class="content__projects__project__description">
+            <h3 class="content__projects__project__description__title">dictionary manager</h3>
+            <p class="content__projects__project__description__text">
+              React-create-app for adding and editing key-value dictionaries
+            </p>
+            <div class="content__projects__project__description__tags">
+              <span>JavaScript</span>
+              <span>ReactJs</span>
+              <span>my-json-server</span>
+              <span>react-bootstrap</span>
+              <span>axios</span>
+            </div>
+          </div>
+          <div class="content__projects__project__view">
+            <div class="content__projects__project__view__window">
+              <div class="content__projects__project__view__window__inner">
+                <a class="content__projects__project__view__window__inner__link"
+                  href="https://alicjaotto.github.io/dictionary-manager/"
+                  target="blank">
+                  DEMO
+                </a>
+                <a class="content__projects__project__view__window__inner__link"
+                  href="https://github.com/alicjaotto/dictionary-manager"
+                  target="blank">
+                  REPO
+                </a>
+              </div>
             </div>
           </div>
         </article>
       </section>
-      <section id="contact"
-        class="content__contact">
-        <h2>Hey, let's connect!</h2>
-        <ul>
+
+    </div>
+    <footer id="contact"
+      class="footer">
+      <div class="footer__description">
+        <div class="footer__description__logo">
+          <span class="footer__description__logo__a">a</span>
+          <span class="footer__description__logo__o">o</span>
+        </div>
+        <h2 class="footer__description__text">Interested in my works? Want to collaborate? Let's connect!</h2>
+      </div>
+      <div class="footer__social-media">
+        <ul class="footer__social-media__list">
           <li>
-              <a href="linkedin">
+            <div class="footer__social-media__list__item">
+              <a href="https://www.linkedin.com/in/alicjaotto">
                 <i class="fi flaticon-linkedin"></i>
               </a>
+            </div>
           </li>
           <li>
-            <a href="github">
-              <i class="fi flaticon-github"></i>
-            </a>
+            <div class="footer__social-media__list__item">
+              <a href="https://github.com/alicjaotto">
+                <i class="fi flaticon-github"></i>
+              </a>
+            </div>
           </li>
           <li>
-            <a href="gmail">
-              <i class="fi flaticon-email"></i>
-            </a>
+            <div class="footer__social-media__list__item">
+              <a href="gmail">
+                <i class="fi flaticon-email"></i>
+              </a>
+            </div>
           </li>
         </ul>
-      </section>
-    </div>
-    <footer class="footer">
-      <div>
-        <span>made by Alicja Otto©twothousandnineteen</span>
+      </div>
+      <div class="footer__copyrights">
+        <span>made by Alicja Otto©2019</span>
       </div>
     </footer>
     <script src="./js/main.js"></script>

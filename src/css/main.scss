@@ -2,8 +2,10 @@
 @import 'variables';
 @import 'reset';
 @import 'header';
+@import 'content';
+@import 'footer';
 
-/*grid*/
+/*css grid*/
 .container {
   display: grid;
   grid-template-columns: auto;
@@ -20,7 +22,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 6rem;
+  height: 5rem;
   padding: 0 1.6rem;
   width: 100%;
   position: fixed;
@@ -44,201 +46,4 @@
   justify-content: center;
   color: $color-primary;
   padding: 2rem 0;
-}
-
-.content__about {
-  width: 100%;
-  background-color: $color-primary;
-  height: auto;
-}
-
-.content__about__intro {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  position: relative;
-  margin-bottom: 4rem;
-}
-
-.content__about__intro__square {
-  width: 16rem;
-  height: 16rem;
-  background-color: $color-theme-emerald;
-  z-index: 0;
-}
-
-.content__about__intro__title {
-  position: absolute;
-  left: 2rem;
-  top: 3rem;
-  color: $color-secondary;
-  font-family: $font-secondary;
-
-  h2 {
-    font-size: 2rem;
-    line-height: 1.3;
-    font-weight: 300;
-  }
-}
-
-.content__about__intro__title__part {
-  display: block;
-}
-
-.content__about__intro__title__part__white {
-  color: $color-primary;
-  margin-right: 0.3rem;
-  font-weight: 600;
-}
-
-.content__about__description {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-bottom: 5rem;
-}
-
-.content__about__description__text {
-  width: 10rem;
-  margin-right: 1rem;
-  font-family: $font-secondary;
-
-  p {
-    text-align: right;
-    color: $color-grey;
-    font-size: $font-size-normal;
-    position: relative;
-
-    &::before {
-      content: '<';
-      color: $color-theme-emerald;
-      font-weight: normal;
-      font-size: 3.2rem;
-      position: absolute;
-      font-family: $font-secondary;
-      top: -1.6rem;
-      left: -1.5rem;
-    }
-
-    &::after {
-      content: '>';
-      color: $color-theme-emerald;
-      font-weight: normal;
-      font-size: 3.2rem;
-      position: absolute;
-      font-family: $font-secondary;
-      top: 3rem;
-      left: 10.5rem;
-    }
-  }
-}
-
-.content__about__description__photo {
-  width: 9rem;
-  height: 9rem;
-  background-color: $color-grey;
-}
-
-.content__about__characteristics {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: $color-secondary;
-  padding: 3rem 0;
-  height: auto;
-}
-
-.content__about__characteristics__feature {
-  width: auto;
-  margin: 0 2rem;
-
-  p {
-    color: $color-theme-emerald;
-    font-size: 1.2rem;
-    text-align: center;
-    font-weight: 400;
-    width: 100%;
-    margin-bottom: 0;
-  }
-}
-
-.content__about__characteristics__feature__icon {
-  font-size: 4rem;
-  color: $color-theme-emerald;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.content__projects {
-  height: auto;
-  width: 100%;
-  background-color: $color-primary;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 3rem;
-}
-
-.content__projects__project {
-  width: 85%;
-}
-
-.content__projects__project__view {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.content__projects__project__view__window {
-  width: 20rem;
-  height: 15rem;
-  background-color: $color-secondary;
-  opacity: 0.75;
-}
-
-.content__projects__project__view__window__inner {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.content__projects__project__view__window__inner__link {
-  width: 8rem;
-  padding: 1.2rem 2rem 1rem;
-  margin: 0.8rem 0;
-  text-align: center;
-  border: 2px solid $color-theme-emerald;
-  border-radius: 1rem;
-  color: $color-theme-emerald;
-}
-
-.content__contact {
-  width: 100%;
-  background-color: $color-theme-emerald;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: $color-primary;
-  padding: 2rem 0;
-
-  li {
-    display: inline-block;
-    font-size: 3rem;
-    margin: 0 1rem;
-
-    a {
-      color: $color-theme-nephritis;
-
-      &:hover {
-        color: $color-secondary;
-      }
-    }
-  }
 }

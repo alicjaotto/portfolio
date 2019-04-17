@@ -57,7 +57,7 @@ html,
 body {
   width: 100%;
   height: 100%;
-  font-family: "Helvetica", sans-serif; }
+  font-family: 'Gothic A1'; }
 
 body {
   background-color: #FFFFFF; }
@@ -134,7 +134,7 @@ a {
 
 .header__nav__menu {
   position: absolute;
-  top: 6rem;
+  top: 5rem;
   left: 0;
   width: 100%;
   background: #FFFFFF;
@@ -167,42 +167,6 @@ a {
 
 .collapse {
   display: none; }
-
-/*grid*/
-.container {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  grid-template-areas: "header" "content" "footer"; }
-
-.header {
-  grid-area: header;
-  background-color: #FFFFFF;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 6rem;
-  padding: 0 1.6rem;
-  width: 100%;
-  position: fixed;
-  top: -1;
-  z-index: 1000; }
-
-.content {
-  margin-top: 6rem;
-  grid-area: content;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center; }
-
-.footer {
-  grid-area: footer;
-  background-color: #2ecc71;
-  display: flex;
-  justify-content: center;
-  color: #FFFFFF;
-  padding: 2rem 0; }
 
 .content__about {
   width: 100%;
@@ -315,10 +279,43 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 3rem; }
+  padding: 2rem 0 0 0; }
 
 .content__projects__project {
-  width: 85%; }
+  width: 85%;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.content__projects__project__description {
+  width: 20rem;
+  margin-bottom: .8rem;
+  font-family: "Gothic A1", sans-serif;
+  color: #7f8c8d;
+  font-size: 1rem; }
+
+.content__projects__project__description__title {
+  color: #34495e;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0 .3rem 0;
+  text-transform: uppercase; }
+
+.content__projects__project__description__text {
+  margin: 0 0 .5rem; }
+
+.content__projects__project__description__tags {
+  font-size: 0.8rem;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .content__projects__project__description__tags span {
+    margin: 0 .4rem .2rem 0;
+    padding: .3rem .4rem;
+    background-color: #2ecc71;
+    border-radius: .4rem; }
 
 .content__projects__project__view {
   display: flex;
@@ -349,19 +346,104 @@ a {
   border-radius: 1rem;
   color: #2ecc71; }
 
-.content__contact {
+.footer {
   width: 100%;
   background-color: #2ecc71;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #FFFFFF;
-  padding: 2rem 0; }
-  .content__contact li {
+  padding: 0 0 2rem; }
+
+.footer__description {
+  width: 20rem; }
+
+.footer__description__text {
+  font-size: 1.5rem;
+  opacity: .75;
+  font-weight: 300;
+  text-align: center; }
+
+.footer__description__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row; }
+
+.footer__description__logo__a,
+.footer__description__logo__o {
+  font-size: 5rem;
+  font-family: "Josefin Slab", serif;
+  width: auto; }
+
+.footer__description__logo__a {
+  font-weight: 300;
+  margin-right: -0.4rem; }
+
+.footer__description__logo__o {
+  margin-top: .85rem; }
+
+.footer__social-media__list {
+  margin: 3rem 0; }
+  .footer__social-media__list li {
     display: inline-block;
-    font-size: 3rem;
-    margin: 0 1rem; }
-    .content__contact li a {
-      color: #27ae60; }
-      .content__contact li a:hover {
-        color: #34495e; }
+    font-size: 2rem;
+    margin: 0 .5rem;
+    width: 3.2rem;
+    height: 3.2rem; }
+
+.footer__social-media__list__item {
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: .75; }
+  .footer__social-media__list__item a {
+    color: #FFFFFF;
+    margin: 0;
+    width: 2rem;
+    height: 2rem; }
+  .footer__social-media__list__item:hover {
+    opacity: 1; }
+
+.footer__copyrights {
+  opacity: .75; }
+
+/*css grid*/
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: "header" "content" "footer"; }
+
+.header {
+  grid-area: header;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  padding: 0 1.6rem;
+  width: 100%;
+  position: fixed;
+  top: -1;
+  z-index: 1000; }
+
+.content {
+  margin-top: 6rem;
+  grid-area: content;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+
+.footer {
+  grid-area: footer;
+  background-color: #2ecc71;
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
+  padding: 2rem 0; }
