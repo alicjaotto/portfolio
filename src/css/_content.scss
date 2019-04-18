@@ -192,9 +192,20 @@
 .content__projects__project__view__window {
   width: 20rem;
   height: 15rem;
-  background-color: $color-secondary;
   opacity: 0.75;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+.content__projects__project__view__window--todo {
+  background-image: url(../../assets/img/todo-min.jpg);
+}
+
+.content__projects__project__view__window--memo {
+  background-image: url(../../assets/img/memo-min.jpg);
+}
+
 
 .content__projects__project__view__window__inner {
   width: 100%;
@@ -203,6 +214,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: rgba(52,73,94, 0.9);
 }
 
 .content__projects__project__view__window__inner__link {

@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){
   const button = document.querySelector('.header__toggle__button');
   const links = document.querySelectorAll('.header__nav__menu__list__item');
+  const projects = document.querySelectorAll('.content__projects__project__view__window');
 
   function toggleMenu() {
     const nav = document.querySelector('#nav-menu');
@@ -12,5 +13,14 @@ document.addEventListener('DOMContentLoaded', function(){
 
   links.forEach((item) => {
     item.addEventListener('click', toggleMenu);
+  });
+
+  function showLinks() {
+    const inner = this.querySelector('.content__projects__project__view__window__inner')
+    inner.classList.toggle('hidden');
+  }
+
+  projects.forEach((item) => {
+    item.addEventListener('click', showLinks);
   });
 });
