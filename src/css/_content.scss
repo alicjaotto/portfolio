@@ -55,6 +55,7 @@
   width: 10rem;
   margin-right: 1rem;
   font-family: $font-secondary;
+  z-index: 5;
 
   p {
     text-align: right;
@@ -88,8 +89,10 @@
 
 .content__about__description__photo {
   width: 9rem;
-  height: 9rem;
+  height: 11rem;
   background-color: $color-grey;
+  background-image: url(../../assets/img/ala1.jpg);
+  opacity: .65;
 }
 
 .content__about__characteristics {
@@ -206,6 +209,13 @@
   background-image: url(../../assets/img/memo-min.jpg);
 }
 
+.content__projects__project__view__window--dict {
+  background-image: url(../../assets/img/dict.jpg);
+}
+
+.content__projects__project__view__window--flight {
+  background-image: url(../../assets/img/flight.jpg);
+}
 
 .content__projects__project__view__window__inner {
   width: 100%;
@@ -225,4 +235,9 @@
   border: 2px solid $color-theme-emerald;
   border-radius: 1rem;
   color: $color-theme-emerald;
+
+  &:hover {
+    background: $color-theme-emerald;
+    color: $color-secondary;
+  }
 }

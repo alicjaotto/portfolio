@@ -11,6 +11,10 @@ body {
   font-family: 'Gothic A1';
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $color-primary;
 }
